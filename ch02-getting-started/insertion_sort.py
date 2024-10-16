@@ -6,7 +6,7 @@ from typing import List
 For simplicity's sake, the sorting algorithm is constrained to work
 with lists of strings only - for now.
 
-Due limitations of Python, namely immutability of strings, the
+Due to Python's limitations, namely immutability of strings, the
 algorithm requires to map the individual characters/strings coming
 from the standard input to ints, assigning them into a new list in the
 process. This makes for O(len(list_to_sort)) space complexity.
