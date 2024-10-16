@@ -16,7 +16,7 @@ b = []
 b = [int(_) for _ in a]
 '''
 # TODO: Find out why it doesn't work as expected, i.e., it generates
-# a list of which each member is a map object, instead of list of
+# a list of which each member is a map object, instead of a list of
 # numbers.
 # MAP_BRACKET = '''
 # b = []
