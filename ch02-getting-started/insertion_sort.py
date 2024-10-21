@@ -3,13 +3,12 @@ from typing import List
 
 '''Insertion sort
 
-For simplicity's sake, the sorting algorithm is constrained to work
-with lists of strings only - for now.
+For now, in order to facilitate the ease of testing via the command
+line, the sorting algorithm takes as the input a list of strings.
 
-Due to Python's limitations, namely immutability of strings, the
-algorithm requires to map the individual characters/strings coming
-from the standard input to ints, assigning them into a new list in the
-process. This makes for O(len(list_to_sort)) space complexity.
+Since Python's strings are immutable, the algorithm requires an
+auxillary list to hold the conversion results (list[str] -> list[int]).
+That makes the space complexity to become O(len(list_to_sort)).
 
 The time complexity is O(len(list_to_sort)), just as in the original
 version of the algorithm.
@@ -18,13 +17,6 @@ version of the algorithm.
 __all__ = ['insertion_sort']
 __author__ = ['as-night']
 
-# The provisional List[str] simplifies initial testing of the code.
-# Passing args on the command line while running the script is easier
-# than constant retyping (or commenting out) of different lists
-# directly in the source code.
-#
-# Definetely something to fix when the implementation is finally
-# correct.
 def insertion_sort(a: List[str]) -> List[int]:
     a = list(map(int, a))
 
