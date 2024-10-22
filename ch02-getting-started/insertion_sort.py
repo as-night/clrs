@@ -1,6 +1,3 @@
-import sys
-from typing import List
-
 '''Insertion sort
 
 For now, in order to facilitate the ease of testing via the command
@@ -15,6 +12,9 @@ version of the algorithm.
 '''
 
 __all__ = ['insertion_sort']
+
+import sys
+from typing import List
 
 def insertion_sort(a: List[str]) -> List[int]:
     a = list(map(int, a))
