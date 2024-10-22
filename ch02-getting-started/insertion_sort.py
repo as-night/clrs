@@ -15,7 +15,6 @@ version of the algorithm.
 '''
 
 __all__ = ['insertion_sort']
-__author__ = ['as-night']
 
 def insertion_sort(a: List[str]) -> List[int]:
     a = list(map(int, a))
