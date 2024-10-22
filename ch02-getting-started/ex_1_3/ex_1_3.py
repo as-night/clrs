@@ -16,7 +16,7 @@ def linear_search(a: List[int], key: int) -> Optional[int]:
             return index
     return None
 
-def main():
+def main() -> None:
     l = [31, 41, 59, 26, 41, 58]
     key = 22
     print(f'list: {l}',

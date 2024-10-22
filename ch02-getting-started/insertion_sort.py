@@ -30,7 +30,7 @@ def insertion_sort(a: List[str]) -> List[int]:
 
     return a
 
-def main(a: List[str]):
+def main(a: List[str]) -> None:
     print('Before sorting:', a,
           'After sorting:', insertion_sort(a),
           sep='\n')
