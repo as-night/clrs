@@ -18,6 +18,7 @@ from typing import List
 
 # TODO: Make the insertion sort work with List[int] objects as the
 # input type.
+# TODO: And then, change the return type to None for in place sort.
 def insertion_sort(a: List[str]) -> List[int]:
     a = list(map(int, a))
 
