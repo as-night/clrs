@@ -7,8 +7,8 @@ __all__ = ['linear_search']
 
 from typing import List, Optional
 
-# We're running on macOS' 3.9.6 by default, so no support for the |
-# operator in function signatures.
+# We're running on macOS' Python 3.9.6 by default, so no support for
+# the | operator in function signatures.
 def linear_search(a: List[int], key: int) -> Optional[int]:
     '''Return the index of the first occcurence of a key or None.'''
     for index, value in enumerate(a):
