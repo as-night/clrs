@@ -5,7 +5,7 @@ line, the sorting algorithm takes as the input a list of strings.
 
 Since Python's strings are immutable, the algorithm requires an
 auxillary list to hold the conversion results (list[str] -> list[int]).
-That makes the space complexity to become O(len(list_to_sort)).
+The space complexity becomes O(len(list_to_sort)).
 
 The time complexity is O(len(list_to_sort)), just as in the original
 version of the algorithm.
