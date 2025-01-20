@@ -1,6 +1,6 @@
 '''Linear search
 
-A simple, proof-of-concept implementation of linear search.
+A simple, proof-of-concept implementation of the linear search.
 '''
 
 __all__ = ['linear_search']
@@ -10,7 +10,7 @@ from typing import List, Optional
 # We're running on macOS' Python 3.9.6 by default, so no support for
 # the | operator in function signatures.
 def linear_search(a: List[int], key: int) -> Optional[int]:
-    '''Return the index of the first occcurence of a key or None.'''
+    '''Return the index of the first occcurence of the key or None.'''
     for index, value in enumerate(a):
         if value == key:
             return index
@@ -26,7 +26,7 @@ def main() -> None:
     if ret:
         print(f'Found the key {key} at the index {ret}.')
     else:
-        print(f'Found {ret}.')
+        print(f'Found the {ret}.')
 
 if __name__ == '__main__':
     raise SystemExit(main())
